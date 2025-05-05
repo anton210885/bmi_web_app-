@@ -1,0 +1,14 @@
+{
+    "name": "BMI Rechner",
+    "short_name": "BMI",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "icons": [
+      {
+        "src": "icons/panda.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }

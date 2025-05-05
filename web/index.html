@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BMI Rechner</title>
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+  <script src="main.dart.js" type="application/javascript"></script>
+  <script>
+    window.addEventListener('load', function() {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      }
+      // Flutter-Initialisierung
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        }
+      }).then(function(engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        return appRunner.runApp();
+      });
+    });
+  </script>
+</body>
+</html>
